@@ -1,0 +1,14 @@
+# otherwise: org.apache.kafka.common.errors.SerializationException: Can't convert value of class com.example.BankTransfer to class org.apache.kafka.common.serialization.StringSerializer specified in value.serializer
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+
+
+advertised:
+  host:
+    name: localhost
+
+server:
+   port: 8085

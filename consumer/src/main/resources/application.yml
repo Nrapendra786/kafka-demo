@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    consumer:
+      #     otherwise: No group.id found in consumer config, container properties, or @KafkaListener annotation; a group.id is required when group management is used.
+      group-id: my-group-id
+      #     otherwise: org.springframework.messaging.converter.MessageConversionException: Cannot convert from [java.lang.String] to [com.example.BankTransfer] for GenericMessage
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      #     otherwise: The class 'com.example.BankTransfer' is not in the trusted packages: [java.util, java.lang].
+      properties:
+        spring.json.trusted.packages: org.example
+
+server:
+   port:8082
