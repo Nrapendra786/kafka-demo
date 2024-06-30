@@ -1,5 +1,5 @@
-use the following 
-cd ProjectPath
-docker-compose up
-ProducerApp 
-Consumer App
+use the following  <br/>
+cd ProjectPath     <br/>
+docker-compose up  <br/>
+start ProducerApp        <br/>
+start ConsumerApp      <br/>
